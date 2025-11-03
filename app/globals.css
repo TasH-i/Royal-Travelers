@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Montserrat:wght@400&display=swap");
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --text-primary: #1f0fe5/#0c0c0b;
+
+  /* Typography Variables */
+  --font-family-heading: "Inter Tight", sans-serif;
+  /* --font-family-body: "Montserrat", sans-serif; */
+
+  /* H1 Styles */
+  --h1-size: 42px;
+  --h1-weight: 600;
+  --h1-line-height: 58px;
+  --h1-letter-spacing: 5px;
+
+  /* H2 Styles */
+  --h2-size: 32px;
+  --h2-weight: 600;
+  --h2-line-height: 44px;
+  --h2-letter-spacing: 2px;
+
+  /* H3 Styles */
+  --h3-size: 20px;
+  --h3-weight: 600;
+  --h3-line-height: 22px;
+  --h3-letter-spacing: 4px;
+
+  /* Body Styles */
+  --body-size: 16px;
+  --body-weight: 400;
+  --body-line-height: 30px;
+  /* --body-letter-spacing: 1px; */
+
+  --brand-yellow: #ffdf7f;
+  --brand-pink: #ff5f62;
+  --brand-red: #d91f1f;
+  --brand-dark-blue: #478db8;
+  --brand-light-blue: #60b8fa;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-pink: var(--brand-pink);
+  --color-brand-red: var(--brand-red);
+  --color-brand-dark-blue: var(--brand-dark-blue);
+  --color-brand-light-blue: var(--brand-light-blue);
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #171717;
+
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-family-body);
+}
+
+/* Heading Styles */
+h1 {
+  font-family: var(--font-family-heading);
+  font-size: var(--h1-size);
+  font-weight: var(--h1-weight);
+  line-height: var(--h1-line-height);
+  letter-spacing: var(--h1-letter-spacing);
+}
+
+h2 {
+  font-family: var(--font-family-heading);
+  font-size: var(--h2-size);
+  font-weight: var(--h2-weight);
+  line-height: var(--h2-line-height);
+  letter-spacing: var(--h2-letter-spacing);
+}
+
+h3 {
+  font-family: var(--font-family-heading);
+  font-size: var(--h3-size);
+  font-weight: var(--h3-weight);
+  line-height: var(--h3-line-height);
+  letter-spacing: var(--h3-letter-spacing);
+
+}
+
+p {
+  font-family: var(--font-family-body);
+  font-size: var(--body-size);
+  font-weight: var(--body-weight);
+  line-height: var(--body-line-height);
+  letter-spacing: var(--body-letter-spacing);
+}
