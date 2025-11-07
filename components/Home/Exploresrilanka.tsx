@@ -65,7 +65,7 @@ export default function ExploreSriLanka() {
                                 <div>
                                     <p className="text-white text-xs sm:text-sm font-bold mb-2">Welcome to Royal Travellers</p>
                                     <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-bold text-white leading-tight">
-                                        <span className="text-white">Experience the
+                                        <span className="text-white">Experience the Art
                                             of Island Living</span>
                                     </h1>
                                 </div>
